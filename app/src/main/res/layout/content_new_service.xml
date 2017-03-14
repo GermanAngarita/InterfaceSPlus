@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.scloud.aftechsales.interfacesplus.NewService"
+    tools:showIn="@layout/activity_new_service">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/id_equipo_ingreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/text_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/no_identificacion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="center_vertical"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="@string/no_identificacion"
+                android:id="@+id/etextNoIdentificacion"
+                android:textSize="12sp"
+                android:background="@android:drawable/edit_text"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:id="@+id/lplaca">
+
+            <TextView
+                android:text="@string/placa"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="@string/placa"
+                android:id="@+id/etextPlaca"
+                android:textSize="12sp"
+                android:background="@android:drawable/edit_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/c_vin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:hint="@string/c_vin"
+                android:id="@+id/etextVin"
+                android:textSize="12sp"
+                android:background="@android:drawable/edit_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/otro_codigo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:ems="10"
+                android:hint="@string/otro_codigo"
+                android:id="@+id/etextCod"
+                android:textSize="12sp"
+                android:background="@android:drawable/edit_text" />
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/tipo_equipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/text_margin" />
+
+        <TextView
+            android:text="@string/select_tipo_equipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8" />
+
+        <Button
+            android:text="@string/Tipo_eq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_select_tequipo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/servicios_para"
+            android:id="@+id/textv_servicios_para"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:text="@string/select_servicio_su"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9" />
+        <Button
+            android:text="@string/seleccionar_servicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_select_servicio" />
+
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
